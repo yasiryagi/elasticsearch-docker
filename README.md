@@ -37,7 +37,7 @@ docker exec -it elasticsearch bin/elasticsearch-setup-passwords interactive
 
 > Kibana: https://<kibana.your.cool.url>
 
-> User `elastic` and password 'YourPassword'
+> User `elastic` and password `YourPassword` 
 
 > Note system sending data will use the anonymous user. 
 
