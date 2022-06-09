@@ -22,17 +22,19 @@ nano kibana/config/kibana.yml
 docker-compose up -d
 ```
 
-### Setup passwords
+## Setup passwords
 
 ```
 docker exec -it elasticsearch bin/elasticsearch-setup-passwords interactive
 ```
 
-
-> Elasticsearch: https://<elasticsearch.your.cool.url>
-> Kibana: https://<kibana.your.cool.url>
+## Access 
+ 
+- Elasticsearch: https://<elasticsearch.your.cool.url>
+- Kibana: https://<kibana.your.cool.url>
 > User `elastic` and password 'YourPassword'
 
+> Note system sending data will use the anonymous user. 
 
 ## Setup  anonymous_system Role
 
@@ -43,8 +45,14 @@ Login into Kibana > Stack Management > Security > Roles > Create role
 ## Create a data view 
 
 Under Kibana > Stack Management > Index Managment should see either distributor-node, storage-node or both depend on you setup
-![Role](./pics/elasticsearch_1.PNG)
+![Index](./pics/elasticsearch_1.PNG)
 
-Under Kibana > Stack Management > Data views create a new data view 
-![Role](./pics/elasticsearch_2.PNG) 
+Under Kibana > Stack Management > Data views > create data view 
+![data view](./pics/elasticsearch_2.PNG) 
 
+
+## Create lead users
+
+Kibana > Stack Management > Security > Users > Create user
+
+![lead](./pics/elasticsearch_4.PNG)
