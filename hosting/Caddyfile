@@ -1,0 +1,8 @@
+# elasticsearch
+https://<elasticsearch.your.cool.url> {
+        reverse_proxy localhost:9200
+}
+# kibana Node
+https://<kibana.your.cool.url> {
+        reverse_proxy localhost:5601
+}
