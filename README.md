@@ -31,6 +31,16 @@ docker-compose up -d
 docker exec -it elasticsearch bin/elasticsearch-setup-passwords interactive
 ```
 
+## Firewall
+
+```
+cp firewall/after.rules /etc/ufw/after.rules
+ufw allow ssh
+ufw allow https
+ufw route allow proto tcp from any to any port 443/tcp
+ufw enable
+```
+
 ## Access 
  
 > Elasticsearch: https://<elasticsearch.your.cool.url>
