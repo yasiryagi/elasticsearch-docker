@@ -12,8 +12,11 @@ git clone https://github.com/yasiryagi/elasticsearch-docker.git
 cd elasticsearch-docker
 
 #set uo data folders
+mkdir ./kibana/data
 chown -R 1000:1000 ./kibana/data
 chmod -R 777 ./kibana/data
+
+mkdir ./elasticsearch/data/
 chown -R 1000:1000 ./elasticsearch/data/
 chmod -R 777 ./elasticsearch/data/
 
