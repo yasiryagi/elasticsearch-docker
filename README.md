@@ -30,8 +30,10 @@ docker exec -it elasticsearch bin/elasticsearch-setup-passwords interactive
 
 ## Access 
  
-- Elasticsearch: https://<elasticsearch.your.cool.url>
-- Kibana: https://<kibana.your.cool.url>
+> Elasticsearch: https://<elasticsearch.your.cool.url>
+
+> Kibana: https://<kibana.your.cool.url>
+
 > User `elastic` and password 'YourPassword'
 
 > Note system sending data will use the anonymous user. 
