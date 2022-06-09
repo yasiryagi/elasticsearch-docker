@@ -74,7 +74,7 @@ Kibana > Stack Management > Security > Users > Create user
 
 ## Configure Joystream Node 
 
-### Distrubtor Node
+### Distributor Node
 
 In joystream/distributor-node/config.yml configure the below section
 ```
