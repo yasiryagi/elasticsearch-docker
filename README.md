@@ -72,4 +72,9 @@ Kibana > Stack Management > Security > Users > Create user
 
 ![lead](./pics/elasticsearch_4.PNG)
 
+## Create BEATS users
 
+![lead](./pics/elasticsearch_5.PNG)
+
+
+![lead](./pics/elasticsearch_6.PNG)

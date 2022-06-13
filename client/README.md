@@ -39,8 +39,10 @@ git clone https://github.com/yasiryagi/elasticsearch-docker.git
 cd elasticsearch-docker/client/
 ```
 
-### Packetbeat
+Edit config/packetbeats/packetbeat.yml **password**
 
+Edit config/metricbeat/metricbeat.yml **password**
 
-
-### Metricbeat
+```
+docker-compose up -d
+```
