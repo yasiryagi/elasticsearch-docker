@@ -31,7 +31,7 @@ ExecStart=/root/.volta/bin/yarn storage-node server \
         -k /root/keys/storage-role-key.json \
         -e https://<elasticsearch.your.cool.url> \
         -s
-
+```
 ## Configure Packetbeat and Metricbeat
 
 ```
