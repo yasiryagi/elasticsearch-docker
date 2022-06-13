@@ -1,0 +1,33 @@
+version: '3.6'
+services:
+  packetbeat:
+    image: docker.elastic.co/beats/packetbeat:8.2.2
+    container_name: packetbeat
+    cap_add: ['NET_RAW', 'NET_ADMIN']
+    command: -e -E 'output.elasticsearch.hosts=["https://elasticsearch.yyagi.cloud:443"]'
+    command: --strict.perms=false -e -E output.elasticsearch.hosts="https://elasticsearch.yyagi.cloud:443" # -e flag to log to stderr and disable syslog/file output
+    secrets:
+      - source: packetbeat.yml
+        target: /usr/share/packetbeat/packetbeat.yml
+    healthcheck:
+      test: packetbeat test config
+      interval: 30s
+      timeout: 15s
+      retries: 5
+  metricbeat:
+    image: docker.elastic.co/beats/metricbeat:8.2.2
+    container_name: metricbeat-host
+    command: --strict.perms=false -e  # -e flag to log to stderr and disable syslog/file output
+    secrets:
+      - source: metricbeat.yml
+        target: /usr/share/metricbeat/metricbeat.yml
+    healthcheck:
+      test: metricbeat test config
+      interval: 30s
+      timeout: 15s
+      retries: 5
+secrets:  
+  packetbeat.yml:
+    file: ./config/packetbeat/packetbeat.yml
+  metricbeat.yml:
+    file: ./config/metricbeat/metricbeat.yml
