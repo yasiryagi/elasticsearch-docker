@@ -56,10 +56,10 @@ output.elasticsearch:
   # password: "*****"
   # ssl.certificate_authorities: ["/usr/share/packetbeat/certs/ca/ca.crt"]
 
-setup.kibana:
-  host: "https://kibana.yyagi.cloud"
-  username: "beats_admin"
-  password: "L3tM31n!"
+#setup.kibana:
+  #host: "https://kibana.yyagi.cloud"
+  #username: "beats_admin"
+  #password: "L3tM31n!"
 #   protocol: "https"
 #   ssl.enabled: false
 #   ssl.certificate_authorities: ["/usr/share/packetbeat/certs/ca/ca.crt"]

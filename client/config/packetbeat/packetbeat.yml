@@ -28,10 +28,10 @@ output.elasticsearch:
   #api_key: "MHJ6bVhvRUJybmlHM2NJSC16cmw6OE1CMmdpeXFSaTZjR1B0M3cxeFBfQQ=="
   username: "beats_admin"
   password: "L3tM31n!"
-setup.kibana:
-  host: "https://kibana.yyagi.cloud"
-  username: "beats_admin"
-  password: "L3tM31n!"
+#setup.kibana:
+  #host: "https://kibana.yyagi.cloud"
+  #username: "beats_admin"
+  #password: "L3tM31n!"
 #   protocol: "https"
 #   ssl.enabled: false
 #   ssl.certificate_authorities: ["/usr/share/packetbeat/certs/ca/ca.crt"]
