@@ -1,4 +1,8 @@
-packetbeat.interfaces.device: any
+
+name: "YYAGI3_DP"
+tags: ["DP", "YYAGI", "PB"]
+
+packetbeat.interfaces.device: eth0
 
 packetbeat.flows:
   timeout: 30s

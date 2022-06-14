@@ -39,9 +39,23 @@ git clone https://github.com/yasiryagi/elasticsearch-docker.git
 cd elasticsearch-docker/client/
 ```
 
-Edit config/packetbeats/packetbeat.yml **password**
+Edit config/packetbeats/packetbeat.yml:
+- name
+- tags
+- hosts
+- username
+- password
 
-Edit config/metricbeat/metricbeat.yml **password**
+
+Edit config/metricbeat/metricbeat.yml:
+
+- name
+- tags
+- hosts
+- username
+- password
+
+# Start the containers
 
 ```
 docker-compose up -d
