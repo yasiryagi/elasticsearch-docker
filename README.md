@@ -61,14 +61,17 @@ Login into Kibana > Stack Management > Security > Roles > Create role
 
 Under Kibana > Stack Management > Index Managment:
 
+
+![Index](./pics/elasticsearch_1.PNG)
+
+Under Kibana > Stack Management > Data views > create data view
+
+
 - distributor-node
 - storage-node
 - metricbeat-8.2.3
 - packetbeat-8.2.3
-
-![Index](./pics/elasticsearch_1.PNG)
-
-Under Kibana > Stack Management > Data views > create data view 
+ 
 ![data view](./pics/elasticsearch_2.PNG) 
 
 
