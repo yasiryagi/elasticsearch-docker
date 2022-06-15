@@ -1,7 +1,7 @@
 version: '3.6'
 services:
   packetbeat:
-    image: docker.elastic.co/beats/packetbeat:8.2.2
+    image: docker.elastic.co/beats/packetbeat:8.2.3
     container_name: packetbeat
     cap_add: ['NET_RAW', 'NET_ADMIN']
     network_mode: host
@@ -17,7 +17,7 @@ services:
       timeout: 15s
       retries: 5
   metricbeat:
-    image: docker.elastic.co/beats/metricbeat:8.2.2
+    image: docker.elastic.co/beats/metricbeat:8.2.3
     container_name: metricbeat
     network_mode: host
     user: root
