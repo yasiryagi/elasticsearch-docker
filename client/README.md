@@ -1,10 +1,6 @@
 # Configure Joystream Node
 
 
-```
-git clone https://github.com/yasiryagi/elasticsearch-docker.git
-cd elasticsearch-docker/client/
-```
 
 ## Distributor Node
 
@@ -62,7 +58,7 @@ Edit config/metricbeat/metricbeat.yml:
 * username: Username provided by the admin
 * password: Username provided by the admin
 
-# Start the containers
+## Start the containers
 
 ```
 docker-compose up -d
