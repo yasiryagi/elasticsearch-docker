@@ -40,20 +40,27 @@ cd elasticsearch-docker/client/
 ```
 
 Edit config/packetbeats/packetbeat.yml:
-- name
-- tags
-- hosts
-- username
-- password
+* name:  Node Name 
+* tags:
+  - SP : Storage Provider
+  - DP : Distributor Provicder
+  - PB : Packetbeat
+  - MB : Metricsbeat
+* hosts : The elasticsearch host
+* username: Username provided by the admin
+* password: Username provided by the admin
 
 
 Edit config/metricbeat/metricbeat.yml:
-
-- name
-- tags
-- hosts
-- username
-- password
+* name:  Node Name
+* tags:
+  - SP : Storage Provider
+  - DP : Distributor Provicder
+  - PB : Packetbeat
+  - MB : Metricsbeat
+* hosts : The elasticsearch host
+* username: Username provided by the admin
+* password: Username provided by the admin
 
 # Start the containers
 
