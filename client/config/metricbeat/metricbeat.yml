@@ -48,11 +48,11 @@ metricbeat.modules:
 hostfs: "/hostfs"
 
 output.elasticsearch:
-  hosts: ["https://elasticsearch.yyagi.cloud:443"]
+  hosts: ["https://elastic.joystreamstats.live:443"]
   protocol: "https"
   #api_key: "MHJ6bVhvRUJybmlHM2NJSC16cmw6OE1CMmdpeXFSaTZjR1B0M3cxeFBfQQ=="
   username: "beats_admin"
-  password: "L3tM31n!"
+  password: "*****"
   # username: beats_system
   # Read PW from packetbeat.keystore
   # password: "*****"

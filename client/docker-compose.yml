@@ -6,8 +6,8 @@ services:
     cap_add: ['NET_RAW', 'NET_ADMIN']
     network_mode: host
     user: root
-    command: -e -E 'output.elasticsearch.hosts=["https://elasticsearch.yyagi.cloud:443"]'
-    command: --strict.perms=false -e -E output.elasticsearch.hosts="https://elasticsearch.yyagi.cloud:443" # -e flag to log to stderr and disable syslog/file output
+    command: -e -E 'output.elasticsearch.hosts=["https://elastic.joystreamstats.live:443"]'
+    command: --strict.perms=false -e -E output.elasticsearch.hosts="https://elastic.joystreamstats.live:443" # -e flag to log to stderr and disable syslog/file output
     secrets:
       - source: packetbeat.yml
         target: /usr/share/packetbeat/packetbeat.yml
@@ -21,7 +21,7 @@ services:
     container_name: metricbeat
     network_mode: host
     user: root
-    command: --strict.perms=false -system.hostfs=/hostfs -e -E output.elasticsearch.hosts="https://elasticsearch.yyagi.cloud:443" # -e flag to log to stderr and disable syslog/file output
+    command: --strict.perms=false -system.hostfs=/hostfs -e -E output.elasticsearch.hosts="https://elastic.joystreamstats.live:443" # -e flag to log to stderr and disable syslog/file output
     volumes:
       - /proc:/hostfs/proc:ro
       - /sys/fs/cgroup:/hostfs/sys/fs/cgroup:ro
