@@ -42,6 +42,7 @@ Edit config/packetbeats/packetbeat.yml:
   - DP : Distributor Provicder
   - PB : Packetbeat
   - MB : Metricsbeat
+* packetbeat.interfaces.device: Your device interface
 * hosts : The elasticsearch host
 * username: Username provided by the admin
 * password: Username provided by the admin
