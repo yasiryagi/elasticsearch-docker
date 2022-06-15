@@ -59,7 +59,13 @@ Login into Kibana > Stack Management > Security > Roles > Create role
 
 ## Create a data view 
 
-Under Kibana > Stack Management > Index Managment should see either distributor-node, storage-node or both depend on you setup
+Under Kibana > Stack Management > Index Managment:
+
+- distributor-node
+- storage-node
+- metricbeat-8.2.3
+- packetbeat-8.2.3
+
 ![Index](./pics/elasticsearch_1.PNG)
 
 Under Kibana > Stack Management > Data views > create data view 
