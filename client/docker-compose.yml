@@ -21,7 +21,7 @@ services:
     container_name: metricbeat
     network_mode: host
     user: root
-    command: --strict.perms=false -e  # -e flag to log to stderr and disable syslog/file output
+    command: --strict.perms=false -system.hostfs=/hostfs -e -E output.elasticsearch.hosts="https://elasticsearch.yyagi.cloud:443" # -e flag to log to stderr and disable syslog/file output
     volumes:
       - /proc:/hostfs/proc:ro
       - /sys/fs/cgroup:/hostfs/sys/fs/cgroup:ro

@@ -30,20 +30,22 @@ metricbeat.modules:
   core.metrics: ["percentages"]
   process.cgroups.enabled: false
 
-metricbeat.modules:
-- module: docker
-  metricsets:
-    - "container"
-    - "cpu"
-    - "diskio"
-    - "healthcheck"
-    - "info"
-    #- "image"
-    - "memory"
-    - "network"
-  hosts: ["unix:///var/run/docker.sock"]
-  period: 10s
-  enabled: true
+#metricbeat.modules:
+#- module: docker
+#  metricsets:
+#    - "container"
+#    - "cpu"
+#    - "diskio"
+#    - "healthcheck"
+#    - "info"
+#    #- "image"
+#    - "memory"
+#    - "network"
+#  hosts: ["unix:///var/run/docker.sock"]
+#  period: 10s
+#  enabled: true
+ 
+hostfs: "/hostfs"
 
 output.elasticsearch:
   hosts: ["https://elasticsearch.yyagi.cloud:443"]
