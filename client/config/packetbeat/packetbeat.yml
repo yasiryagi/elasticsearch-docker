@@ -1,8 +1,8 @@
 
-name: "YYAGI3_DP"
-tags: ["DP", "YYAGI", "PB"]
+name: "YYAGI2_SP"
+tags: ["SP", "YYAGI", "PB"]
 
-packetbeat.interfaces.device: eth0
+packetbeat.interfaces.device: enp41s0
 
 packetbeat.flows:
   timeout: 30s
@@ -14,9 +14,6 @@ packetbeat.protocols:
 
 - type: http
   ports: [80, 8080, 8000, 5000, 8002]
-
-- type: memcache
-  ports: [11211]
 
 - type: tls
   ports: [443, 993, 995, 5223, 8443, 8883, 9243]

@@ -1,5 +1,5 @@
-name: "YYAGI3_DP"
-tags: ["DP", "YYAGI", "MB"]
+name: "YYAGI2_SP"
+tags: ["SP", "YYAGI", "MB"]
 
 metricbeat.config.modules:
   path: ${path.config}/modules.d/*.yml
