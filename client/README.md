@@ -35,7 +35,7 @@ git clone https://github.com/yasiryagi/elasticsearch-docker.git
 cd elasticsearch-docker/client/
 ```
 
-Edit config/packetbeats/packetbeat.yml:
+Edit config/packetbeat/packetbeat.yml:
 * name:  Node Name 
 * tags:
   - SP : Storage Provider
