@@ -1,11 +1,11 @@
-
+Default ElasticSerach URL **localhost:9200**, This can also be done remotely.
+If not done remotely jump into container
 ```
 docker exec -it elasticsearch bash
 ```
 
-
 ```
-curl -u username:oassword -X PUT "localhost:9200/_ingest/pipeline/geoip-info?pretty" -H 'Content-Type: application/json' -d'
+curl -u username:password -X PUT "Your_ElasticSearch_URL/_ingest/pipeline/geoip-info?pretty" -H 'Content-Type: application/json' -d'
 {
   "description": "Add geoip info",
   "processors": [
