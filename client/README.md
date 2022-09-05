@@ -36,7 +36,7 @@ cd elasticsearch-docker/client/
 ```
 
 Edit config/packetbeat/packetbeat.yml:
-* name:  Node Name 
+* name:  NodeName_SP
 * tags:
   - SP : Storage Provider
   - DP : Distributor Provicder
@@ -49,7 +49,7 @@ Edit config/packetbeat/packetbeat.yml:
 
 
 Edit config/metricbeat/metricbeat.yml:
-* name:  Node Name
+* name:  NodeName_SP
 * tags:
   - SP : Storage Provider
   - DP : Distributor Provicder
